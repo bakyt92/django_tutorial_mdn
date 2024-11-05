@@ -112,8 +112,8 @@ class Author(models.Model):
 
 class Language(models.Model):
     """Model representing Languages"""
-    language_name = models.Charfield(max_length = 200, 
-                                    unique = true,
+    language_name = models.CharField(max_length = 200, 
+                                    unique = True,
                                     help_text="Enter the book's natural language (e.g. English, French, Japanese etc.)")
 
     class Meta:
