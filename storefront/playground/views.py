@@ -7,4 +7,4 @@ def say_hello(request):
 	return(HttpResponse('Hello World'))
 
 def say_hello1(request):
-	return(HttpResponse('Hello World_Bakyt'))
+	return render(request, 'hello.html', {'name': 'BKT356'})
